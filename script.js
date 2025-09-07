@@ -19,7 +19,7 @@ calculateBtn.addEventListener('click', () => {
     const unit = unitSelect.value;
 
     if (isNaN(distance) || distance <= 0) {
-        customAlert('Por favor, introduce una distancia válida y positiva.');
+        customAlert('Por favor, introduzca una distancia válida y positiva.');
         return;
     }
 
@@ -45,7 +45,8 @@ calculateBtn.addEventListener('click', () => {
     const milValueInches = milValueCm * 0.393701;
 
     // Mostramos los resultados
-    moaResult.innerHTML = `1 MOA = <span>${moaValueCm.toFixed(2)} cm</span> o <span>${moaValueInches.toFixed(2)} pulgadas</span>`;
-    milResult.innerHTML = `1 Mil = <span>${milValueCm.toFixed(2)} cm</span> o <span>${milValueInches.toFixed(2)} pulgadas</span>`;
+    moaResult.innerHTML = `1 MOA = <span>${moaValueCm.toFixed(2)} cm o ${moaValueInches.toFixed(2)} pulgadas</span>`;
+    milResult.innerHTML = `1 Mil = <span>${milValueCm.toFixed(2)} cm o ${milValueInches.toFixed(2)} pulgadas</span>`;
     resultContainer.style.display = 'block';
+
 });
