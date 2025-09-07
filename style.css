@@ -68,21 +68,32 @@ h1 {
 
 .form-group {
     margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .form-group label {
     display: block;
     font-weight: 600;
     margin-bottom: 6px;
+    flex-basis: 100%;
 }
 
 .form-group input {
-    width: 100%;
+    flex-grow: 1;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1em;
     box-sizing: border-box;
+}
+
+.form-group select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
 }
 
 button {
@@ -118,6 +129,10 @@ button:hover {
     margin: 0 0 10px 0;
     font-weight: bold;
     color: #333;
+}
+
+.result-container p span {
+    font-weight: normal;
 }
 
 /* Estilos del pie de página */
@@ -156,5 +171,4 @@ footer p {
     margin: 15px auto 0;
     max-width: 80px;
     height: auto;
-
 }
